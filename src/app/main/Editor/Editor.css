@@ -1,0 +1,114 @@
+.editor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3000;
+    background: black;
+    font-size: 12px;
+    /*color: white;*/
+    user-select: none;
+}
+
+.navbar-brand {
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.editor-canvas {
+    background: rgb(100, 100, 100);
+    position: absolute;
+    width: 100000px;
+    height: 100000px;
+}
+
+.canvas-container {
+    position: absolute;
+    width: 100000px;
+    height: 100000px;
+}
+
+.grid {
+    position: absolute;
+    background: rgb(50, 50, 50);
+}
+
+.grid-container.noshow .grid:not(.axis) {
+    display: none;
+}
+
+.grid-container.noshow .grid.axis.horizontal-grid {
+    height: 10px;
+}
+
+.grid-container.noshow .grid.axis.vertical-grid {
+    width: 10px;
+}
+
+.vertical-grid {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+}
+
+.horizontal-grid {
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+.vertical-grid.axis {
+    width: 3px;
+    background: red;
+}
+
+.horizontal-grid.axis {
+    height: 3px;
+    background: red;
+}
+
+.terrain {
+    background: blue;
+    position: absolute;
+    border: 3px solid darkblue;
+}
+
+.obstacle {
+    background: red;
+    position: absolute;
+    border: 3px solid darkred;
+}
+
+.player {
+    background: green;
+    position: absolute;
+    border: 3px solid darkgreen;
+}
+
+.death-area {
+    background: rgb(255, 0, 0, .3);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 50500px;
+    border-top: 5px dashed darkred;
+}
+
+.checkpoint {
+    position: absolute;
+    bottom: 49500px;
+    top: 0;
+    width: 25px;
+    background: rgb(0, 255, 0, .3);
+}
+
+.no-interact {
+    pointer-events: none;
+}
